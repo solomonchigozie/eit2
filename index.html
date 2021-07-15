@@ -1,0 +1,160 @@
+<!DOCTYPE>
+<html>
+    <head>
+        <!-- meta tags  -->
+        <meta charset="UTF-8">
+        <meta name="author" content="emblic technologies">
+        <meta name="description" content="this is a basic html page">
+        <meta name="keywords" content="html,web development,css, ph,">
+        
+        <!-- favicon -->
+        <link rel="icon" href="images/fbme.png">
+
+        <!-- link to our css file  -->
+        <link rel="stylesheet" href="css/style.css">
+        
+        <title>my first website</title>
+        
+    </head>
+    <body>
+        <!-- heading tags  -->
+        
+        <p title="par" class="firstpar">this is a paragraph</p>
+        <p title="par" class="partwo">this is another paragraph</p>
+
+        <!-- link within the page  -->
+        <a href="contact.html">Contact Page</a> 
+
+        <br>
+
+        <!-- this is how to link to an external website -->
+        <a href="https://www.goal.com" target="_blank">
+            Check Out todays sport news
+        </a>
+
+        <!-- ordered list  -->
+        <ol type="a">
+            <li>vegetables</li>
+            <li>ice cream</li>
+            <li>candy </li>
+        </ol>
+
+        <!-- unordered list  -->
+        <ul type="circle">
+            <li>tv</li>
+            <li>pressing iron</li>
+            <li>external socket</li>
+        </ul>
+
+        <!-- creating a table  -->
+        <table border="1">
+            <thead>
+                <tr>
+                    <th>SN</th>
+                    <th>Name</th>
+                    <th>State</th>
+                    <th>LGA</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>1</td>
+                    <td>Benson</td>
+                    <td>Osun</td>
+                    <td>Ilesha East</td>
+                </tr>
+                <tr>
+                    <td>2</td>
+                    <td>Mr Samue joshua</td>
+                    <td>Akwa Ibom</td>
+                    <td>Nsit</td>
+                </tr>
+            </tbody>
+        </table>
+
+        <!-- images  :: create and image folder in root directory and add images -->
+        <img src="images/road.jpg" alt="image of a tree" class="road">
+
+        <img src="https://cdn.pixabay.com/photo/2012/05/29/00/43/car-49278_960_720.jpg" 
+        alt="sport car" width="400px">
+
+        <br>
+        <br>
+        <!-- using image as links  -->
+        <a href="https://www.facebook.com">
+            <img src="images/fbme.png" alt="car image" id="fbicon">
+        </a>
+
+        <br>
+        &copy; 2021. All Rights reserved
+        &reg; &trade; &times; &#8358;5,000
+        <hr>
+        <br>
+        <a href="images/fbme.png" download="">download facebook icon</a>
+
+        <a href="images/fbme.png" download="facebookicon">download facebook icon</a>
+
+
+        <form action="contact.html" method="post" enctype="multipart/form-data" autocomplete="off">
+            <div>
+                <label for="name">Name : </label>
+                <input type="text" name="name" id="name" placeholder="fullname" required>
+            </div>
+            <div>
+                <label for="email">Email : </label>
+                <input type="email" disabled value="email@email.com" name="email" id="email" >
+            </div>
+            <div>
+                <input type="radio" name="gender" required> Male 
+                <input type="radio" name="gender"> Female 
+            </div>
+            <div>
+                <input type="checkbox" name="course"> Html
+                <input type="checkbox" name="course"> Css
+                <input type="checkbox" name="course"> Javascript
+            </div>
+            
+            <div>
+                <label for="passport">Passport</label>
+                <input type="file" name="passport">
+            </div>
+            <div>
+                <label for="password">Password</label>
+                <input type="password" min="10" max="100" name="password" autofocus>
+                <input type="datetime-local"  name="date">
+            </div>
+            <div>
+                <label for="state">State of Origin: </label>
+                <select name="state" id="state">
+                    <option value="osun">Osun</option>
+                    <option value="rivers">Rivers State</option>
+                    <option value="delta">Delta State</option>
+                </select>
+            </div>
+
+            <div>
+                <input type="color">
+                <input type="submit" value="submit form">
+                <button type="submit">submit</button>
+            </div>
+        </form>
+        
+        <!-- html audio  -->
+        <audio controls>
+            <source src="media/preacherman.mp3" type="audio/mp3">
+            Your browser does not support the audio element.
+        </audio>
+
+        <video width="320" height="240" controls>
+            <source src="media/emblic.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+
+        <br><br>
+        <br><br>
+        <br><br>
+        <br><br>
+        <br><br>
+        
+    </body>
+</html>
